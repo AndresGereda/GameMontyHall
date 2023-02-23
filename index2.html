@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href=".ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    
+    <title>Monty Hall</title>
+</head>
+<body>
+<center><p><h2>Juego de Monty Hall: En alguna de las puertas esta el Lamborghini</h2></p></center>
+<center><p>Consiste: </p></center>
+<center><p>1. Elige una puerta pero no la abras</p></center>
+<center><p>2. Dale click en "abrir una puerta", se abrira una puerta</p></center>
+<center><p>3. Ahora elige una puerta de las que queda, recuerda puedes cambiar de puerta o quedarte con la que elegiste</p></center>
+
+<center><p><input type="button" class="fair-style-button"  value="💰 SORTEAR EL COFRE DEL TESORO 💰" id="sorteo" /></p></center>
+<center><h3 id="de">Escoja una puerta 🚪:</h3></center>
+<center>
+    <table>
+        <tr><td><button id="p1"><img id="r1" src=cldoor.png height="70" width="70"></img></button></td><td><button id="p2"><img id="r2" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p3"><img id="r3" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p4"><img id="r4" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p5"><img id="r5" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p6"><img id="r6" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p7"><img id="r7" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p8"><img id="r8" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p9"><img id="r9" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p10"><img id="r10" src=cldoor.png height=70" width="70"></img></button></td></tr>
+        <tr><td><button id="p11"><img id="r11" src=cldoor.png height="70" width="70"></img></button></td><td><button id="p12"><img id="r12" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p13"><img id="r13" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p14"><img id="r14" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p15"><img id="r15" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p16"><img id="r16" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p17"><img id="r17" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p18"><img id="r18" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p19"><img id="r19" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p20"><img id="r20" src=cldoor.png height=70" width="70"></img></button></td></tr>
+        <tr><td><button id="p21"><img id="r21" src=cldoor.png height="70" width="70"></img></button></td><td><button id="p22"><img id="r22" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p23"><img id="r23" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p24"><img id="r24" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p25"><img id="r25" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p26"><img id="r26" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p27"><img id="r27" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p28"><img id="r28" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p29"><img id="r29" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p30"><img id="r30" src=cldoor.png height=70" width="70"></img></button></td></tr>
+        <tr><td><button id="p31"><img id="r31" src=cldoor.png height="70" width="70"></img></button></td><td><button id="p32"><img id="r32" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p33"><img id="r33" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p34"><img id="r34" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p35"><img id="r35" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p36"><img id="r36" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p37"><img id="r37" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p38"><img id="r38" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p39"><img id="r39" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p40"><img id="r40" src=cldoor.png height=70" width="70"></img></button></td></tr>
+        <tr><td><button id="p41"><img id="r41" src=cldoor.png height="70" width="70"></img></button></td><td><button id="p42"><img id="r42" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p43"><img id="r43" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p44"><img id="r44" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p45"><img id="r45" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p46"><img id="r46" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p47"><img id="r47" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p48"><img id="r48" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p49"><img id="r49" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p50"><img id="r50" src=cldoor.png height=70" width="70"></img></button></td></tr>
+        <tr><td><button id="p51"><img id="r51" src=cldoor.png height="70" width="70"></img></button></td><td><button id="p52"><img id="r52" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p53"><img id="r53" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p54"><img id="r54" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p55"><img id="r55" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p56"><img id="r56" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p57"><img id="r57" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p58"><img id="r58" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p59"><img id="r59" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p60"><img id="r60" src=cldoor.png height=70" width="70"></img></button></td></tr>
+        <tr><td><button id="p61"><img id="r61" src=cldoor.png height="70" width="70"></img></button></td><td><button id="p62"><img id="r62" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p63"><img id="r63" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p64"><img id="r64" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p65"><img id="r65" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p66"><img id="r66" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p67"><img id="r67" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p68"><img id="r68" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p69"><img id="r69" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p70"><img id="r70" src=cldoor.png height=70" width="70"></img></button></td></tr>
+        <tr><td><button id="p71"><img id="r71" src=cldoor.png height="70" width="70"></img></button></td><td><button id="p72"><img id="r72" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p73"><img id="r73" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p74"><img id="r74" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p75"><img id="r75" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p76"><img id="r76" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p77"><img id="r77" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p78"><img id="r78" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p79"><img id="r79" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p80"><img id="r80" src=cldoor.png height=70" width="70"></img></button></td></tr>
+        <tr><td><button id="p81"><img id="r81" src=cldoor.png height="70" width="70"></img></button></td><td><button id="p82"><img id="r82" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p83"><img id="r83" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p84"><img id="r84" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p85"><img id="r85" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p86"><img id="r86" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p87"><img id="r87" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p88"><img id="r88" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p89"><img id="r89" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p90"><img id="r90" src=cldoor.png height=70" width="70"></img></button></td></tr>
+        <tr><td><button id="p91"><img id="r91" src=cldoor.png height="70" width="70"></img></button></td><td><button id="p92"><img id="r92" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p93"><img id="r93" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p94"><img id="r94" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p95"><img id="r95" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p96"><img id="r96" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p97"><img id="r97" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p98"><img id="r98" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p99"><img id="r99" src=cldoor.png height=70" width="70"></img></button></td><td><button id="p100"><img id="r100" src=cldoor.png height=70" width="70"></img></button></td></tr>
+      </table>
+</center>
+
+<script src="funcion2.js"></script>
+<center><p><input type="button" class="fair-style-button" value="💰 ABRIR UNA PUERTA 💰" id="sorteo1" /></p></center>
+<center><h3 id="d1"></h3></center>
+
+<center><a href="index2.html"><input type="button" class="boton-feria" value="💰 JUGAR DE NUEVO PARA 100 PUERTAS 💰" id="sorteo2" /></a></center>
+<center><a href="index.html"><input type="button" class="boton-feria" value="💰 JUGAR AHORA PARA TRES PUERTAS 💰" /></a></center>
+<center><a href="index1.html"><input type="button" class="boton-feria" value="💰 JUGAR AHORA PARA 9 PUERTAS 💰" /></a></center>
+  <center>
+    <p>Hecho por:</p>
+    <a href="https://www.instagram.com/andres_santage/">
+      <img src="insta.png" alt="Logo de Instagram" style="width: 30px; height: 30px;">Andres Santana</a>
+    <a href="https://www.instagram.com/eilchz_zeta/">
+      <img src="insta.png" alt="Logo de Instagram" style="width: 30px; height: 30px;">Guido Rosseto</a>
+    </center>
+
+<p>&nbsp</p>
+<p>&nbsp</p>
+<p>&nbsp</p>
+<p>&nbsp</p>
+<p>&nbsp</p>
+</body>
+</html>
+

@@ -1,0 +1,55 @@
+* {
+  font-family: sans-serif;
+  margin: 3;
+  padding: 3;
+  box-sizing: border-box;
+}
+body {
+  background-color: skyblue;
+}
+.myImage {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+.myImage:hover {
+  transform: translateY(-5px);
+}
+
+.fair-style-button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid white;
+  color: white;
+  background-color: darkorange;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  transition: transform 0.2s ease-in-out;
+}
+.fair-style-button:hover {
+  transform: translateY(-5px);
+}
+.boton-feria {
+  background-color: #ff6b6b; /* Color rojo brillante */
+  border: 2px solid #ff9a9a; /* Borde rojo brillante */
+  border-radius: 30px; /* Esquinas redondas */
+  box-shadow: 0 10px 20px rgba(255, 105, 180, 0.19), 0 6px 6px rgba(255, 105, 180, 0.23); /* Sombra brillante */
+  color: white; /* Texto blanco */
+  font-size: 15px; /* Tamaño de letra */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  padding: 15px 30px; /* Espacio alrededor del texto */
+  transition: all 0.3s ease-in-out; /* Transición suave al hacer hover */
+}
+
+.boton-feria:hover {
+  background-color: #ff9a9a; /* Color rojo brillante al hacer hover */
+  cursor: pointer; /* Cursor de enlace */
+}
+
+a {
+text-decoration:none;
+color: #fff;
+}
+
+
