@@ -16,10 +16,12 @@ function f()
   var x=(getRandomArbitrary(1,n+1));
  
   let counter = 0;
-  var b5 = document.querySelector('#Puerta1');b5.addEventListener('click', function() {counter++; if (counter === 1) {y=1;r1.src =x4;} else if (counter === 2) {w=1;d();}});
+  /* var b5 = document.querySelector('#Puerta1');b5.addEventListener('click', function() {counter++; if (counter === 1) {y=1;r1.src =x4;} else if (counter === 2) {w=1;d();}});
   var b6 = document.querySelector('#Puerta2');b6.addEventListener('click', function() {counter++; if (counter === 1) {y=2;r2.src =x4;} else if (counter === 2) {w=2;d();}});
-  var b7 = document.querySelector('#Puerta3');b7.addEventListener('click', function() {counter++; if (counter === 1) {y=3;r3.src =x4;} else if (counter === 2) {w=3;d();}});
-
+  var b7 = document.querySelector('#Puerta3');b7.addEventListener('click', function() {counter++; if (counter === 1) {y=3;r3.src =x4;} else if (counter === 2) {w=3;d();}}); */
+  document.querySelectorAll("tbody").addEventListener("click",(e)=>{
+    console.log(e.target);
+  })
 for (let i = 1; i <=n; i++) {
   window[`r${i}`] = document.getElementById(`r${i}`);
 }
